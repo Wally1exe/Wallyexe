@@ -1,0 +1,65 @@
+/*Loading page text*/
+.whole-body{
+    cursor: url("images/normal.cur"), auto;
+}
+a{cursor: url("images/link.cur"), auto;}
+li{cursor: url("images/link.cur"), auto;}
+i{cursor: url("images/link.cur"), auto;}
+p{cursor: url("images/link.cur"), auto;}
+h1{cursor: url("images/link.cur"), auto;}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background: linear-gradient(#0D324D, #7F5A83);
+}
+.center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.ring{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s infinite;
+}
+@keyframes ring{
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px whitesmoke;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px whitesmoke;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px whitesmoke;
+    }
+}
+.ring:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+span{
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text1 3s ease-in-out infinite;
+}
+@keyframes text1 {
+    50%{ color: black;}
+}

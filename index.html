@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>LoadingPage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+<body>
+<div class="whole-body">
+<script>
+    const myTimeout = setTimeout(myfunction, 2700);
+    function myfunction() {
+        location.replace("/Pages/Home.html")
+    }
+</script>
+        <div class="center">
+            <div class="ring"></div>
+            <style>
+                body{
+                    font-family: monospace;
+                }
+            </style>
+            <span>loading...</span>
+        </div>
+</div>
+
+</body>
+</html>
