@@ -91,14 +91,14 @@ w:hover span1:nth-child(4){
 
 /*///////////////////////////////////////////////////////////////////////////////*/
 .whole-body{
-    cursor: url("/images/normal.cur"), auto;
+    cursor: url("/Wallyexe/images/normal.cur"), auto;
 }
-a{cursor: url("/images/link.cur"), auto;}
-li{cursor: url("/images/link.cur"), auto;}
-i{cursor: url("/images/link.cur"), auto;}
-p{cursor: url("/images/link.cur"), auto;}
-h1{cursor: url("/images/link.cur"), auto;}
-button{cursor: url("/images/link.cur"), auto;}
+a{cursor: url("/Wallyexe/images/link.cur"), auto;}
+li{cursor: url("/Wallyexe/images/link.cur"), auto;}
+i{cursor: url("/Wallyexe/images/link.cur"), auto;}
+p{cursor: url("/Wallyexe/images/link.cur"), auto;}
+h1{cursor: url("/Wallyexe/images/link.cur"), auto;}
+button{cursor: url("/Wallyexe/images/link.cur"), auto;}
 
 
 body {
@@ -106,7 +106,7 @@ body {
     overflow: hidden;
     font: 16px monospace;
     color: rgb(105, 155, 58);
-    background-image: url("/images/background-blue.png");
+    background-image: url("/Wallyexe/images/background-blue.png");
 }
 .wrap {
     display: flex;
@@ -125,7 +125,7 @@ body {
     border-radius: 60%;
     width: 800px;
     height: 600px;
-    background: url(/images/background-blue.png);
+    background: url("/Wallyexe/images/background-blue.png");
     animation: scroll-background 5s linear infinite;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -134,7 +134,7 @@ body {
 
 header {
     text-align: center;
-    background-image: url("/images/title.png");
+    background-image: url("/Wallyexe/images/title.png");
     color: #fff;
     padding: 55px;
     height: 0;
