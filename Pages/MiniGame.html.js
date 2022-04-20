@@ -55,7 +55,7 @@ function collideRect(rect1, rect2){
 // Enemy
 function createEnemy($container, x, y){
     const $enemy = document.createElement("img");
-    $enemy.src = "/images/ufo.png";
+    $enemy.src = "/Wallyexe/images/ufo.png";
     $enemy.className = "enemy";
     $container.appendChild($enemy);
     const enemy_cooldown = Math.floor(Math.random()*100);
@@ -88,7 +88,7 @@ function createPlayer($container) {
     STATE.x_pos = GAME_WIDTH / 2;
     STATE.y_pos = GAME_HEIGHT - 50;
     const $player = document.createElement("img");
-    $player.src = "/images/spaceship.png";
+    $player.src = "/Wallyexe/images/spaceship.png";
     $player.className = "player";
     $container.appendChild($player);
     setPosition($player, STATE.x_pos, STATE.y_pos);
@@ -114,7 +114,7 @@ function updatePlayer(){
 // Player Laser
 function createLaser($container, x, y){
     const $laser = document.createElement("img");
-    $laser.src = "/images/laser.png";
+    $laser.src = "/Wallyexe/images/laser.png";
     $laser.className = "laser";
     $container.appendChild($laser);
     const laser = {x, y, $laser};
@@ -149,7 +149,7 @@ function updateLaser($container){
 // Enemy Laser
 function createEnemyLaser($container, x, y){
     const $enemyLaser = document.createElement("img");
-    $enemyLaser.src = "/images/enemyLaser.png";
+    $enemyLaser.src = "/Wallyexe/images/enemyLaser.png";
     $enemyLaser.className = "enemyLaser";
     $container.appendChild($enemyLaser);
     const enemyLaser = {x, y, $enemyLaser};
