@@ -91,17 +91,17 @@ w:hover span1:nth-child(4){
 
 
 .whole-body{
-    cursor: url("/images/normal.cur"), auto;
+    cursor: url("/Wallyexe/images/normal.cur"), auto;
 }
-a{cursor: url("/images/link.cur"), auto;}
-li{cursor: url("/images/link.cur"), auto;}
-i{cursor: url("/images/link.cur"), auto;}
-p{cursor: url("/images/link.cur"), auto;}
-h1{cursor: url("/images/link.cur"), auto;}
+a{cursor: url("/Wallyexe/images/link.cur"), auto;}
+li{cursor: url("/Wallyexe/images/link.cur"), auto;}
+i{cursor: url("/Wallyexe/images/link.cur"), auto;}
+p{cursor: url("/Wallyexe/images/link.cur"), auto;}
+h1{cursor: url("/Wallyexe/images/link.cur"), auto;}
 
 
 body {
-    cursor: url("/images/normal.cur"), auto;
+    cursor: url("/Wallyexe/images/normal.cur"), auto;
     padding: 0;
     margin: 0;
     font-family: monospace;
