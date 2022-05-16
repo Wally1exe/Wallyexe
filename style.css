@@ -1,4 +1,27 @@
 /*Loading page text*/
+html, body {
+    width: 100%;
+    height:100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background: linear-gradient(-45deg, #F53844, #42378F, #6D17CB, #2876F9);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .whole-body{
     cursor: url("images/normal.cur"), auto;
 }
@@ -8,12 +31,6 @@ i{cursor: url("images/link.cur"), auto;}
 p{cursor: url("images/link.cur"), auto;}
 h1{cursor: url("images/link.cur"), auto;}
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: monospace;
-    background: linear-gradient(#0D324D, #7F5A83);
-}
 .center{
     display: flex;
     text-align: center;
@@ -21,45 +38,39 @@ body{
     align-items: center;
     min-height: 100vh;
 }
-.ring{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    animation: ring 2s infinite;
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@keyframes ring{
-    0%{
-        transform: rotate(0deg);
-        box-shadow: 1px 5px 2px whitesmoke;
+.circle{
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    border-radius: 50%;
+    animation: animate 2s infinite linear;
+    background: navajowhite;
+    box-shadow: 4px 3px 10px black ,
+    -4px 3px 5px #888888
+}
+.circle:nth-child(1){
+    animation-delay: 0.5s;
+}
+.circle:nth-child(2){
+    animation-delay: 1s;
+}
+.circle:nth-child(3){
+    animation-delay: 1.5s;
+}
+@keyframes animate {
+
+    0%,
+    10%{
+        transform: translateY(5px);
     }
+
     50%{
-        transform: rotate(180deg);
-        box-shadow: 1px 5px 2px whitesmoke;
+        transform:
+        translateY(-25px);
     }
-    100%{
-        transform: rotate(360deg);
-        box-shadow: 1px 5px 2px whitesmoke;
-    }
-}
-.ring:before{
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
-}
-span{
-    color: #737373;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 200px;
-    animation: text1 3s ease-in-out infinite;
-}
-@keyframes text1 {
-    50%{ color: black;}
 }
