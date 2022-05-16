@@ -175,7 +175,7 @@ a {
     }
 
     .navbar__menu.active {
-        background: #1384c8;
+        background: #111111;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
